@@ -1,5 +1,7 @@
 class Song
 
+  def initialize
+  end
   def self.count
   end
 
