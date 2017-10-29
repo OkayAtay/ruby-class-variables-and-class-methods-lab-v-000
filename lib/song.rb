@@ -11,6 +11,7 @@ attr_accessor :name, :artist, :genre
 
   def initialize(name, artist, genre)
     @name=name
+    @artist=artist
     @@song_count += 1
     if @@genres.include?(genre) == false
       @@genres << genre
