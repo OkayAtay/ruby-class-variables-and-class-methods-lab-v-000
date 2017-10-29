@@ -23,9 +23,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.artists
-    @@artists.delete_if {|artist|}
-    if @@genres.include?(genre) == false
-      @@genres << genre
+    @@artists = @@artists.uniq
     end
   end
 
