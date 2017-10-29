@@ -30,9 +30,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count
-    @@genres.each_with_index {|genre, count|
-    @@genre_count[genre] = count}
-    @@genre_count
+    @@genres = {}
   end
 
   def self.artist_count
