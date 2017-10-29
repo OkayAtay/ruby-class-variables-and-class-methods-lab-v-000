@@ -34,7 +34,7 @@ attr_accessor :name, :artist, :genre
 #@@genres = [pop, rap, rap]
 #genre_count
   #need to return {pop =>1, rap => 2}
-  
+
   def self.genre_count
     binding.pry
     @@genres.reduce(@@genre_count){|genre, count| genre[count] +=1; genre}
