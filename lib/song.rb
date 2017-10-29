@@ -38,7 +38,6 @@ attr_accessor :name, :artist, :genre
   def self.genre_count
     count = []
     binding.pry
-    @@genres.reduce(@@genre_count){|genre, count| genre[count] +=1; genre}
     count = @@genres.group_by{|genre| genre}.map{|k, v| [k, v.count]}
     @@genre_count = count.flatten
   end
