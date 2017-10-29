@@ -5,7 +5,7 @@ attr_accessor :name, :artists, :genre
 
 @@song_count = 0
 @@genre_count = {}
-@@artist_count = 0
+@@artist_count = {}
 @@genres = []
 @@artists = []
 
