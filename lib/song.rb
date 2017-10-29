@@ -31,7 +31,6 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count
-    binding.pry
     @@genres.each_with_index {|genre, count|
     @@genre_count[genre] = count}
     @@genre_count
