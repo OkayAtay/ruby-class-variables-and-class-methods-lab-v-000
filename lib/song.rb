@@ -32,7 +32,6 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count
-    binding.pry
     @genre.inject(0) {|genre, count| genre[counts] +=1; genre}
 
   end
