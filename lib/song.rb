@@ -38,6 +38,7 @@ attr_accessor :name, :artist, :genre
   def self.genre_count
     binding.pry
     @@genres.reduce(@@genre_count){|genre, count| genre[count] +=1; genre}
+    @@genres.group_by{|genre| genre}.select{|key, val| val.length >1}.keys
   end
 
   def self.artist_count
