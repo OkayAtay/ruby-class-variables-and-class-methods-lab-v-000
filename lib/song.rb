@@ -7,7 +7,7 @@ attr_accessor :name :artist :genre
   def initialize
     @@song_count += 1
     if @@genres.include?(genre) == false
-      @@genres << @genre
+      @@genres << genre
   end
 
   def self.count
