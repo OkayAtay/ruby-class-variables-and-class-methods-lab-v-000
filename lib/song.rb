@@ -16,10 +16,6 @@ attr_accessor :name, :artist, :genre
     @genre=genre
     @@genres << genre
     @@count += 1
-    if @@genres.include?(genre) == false
-      @@genres << genre
-    end
-
   end
 
   def self.count
