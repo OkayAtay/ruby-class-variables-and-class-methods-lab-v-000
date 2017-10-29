@@ -32,7 +32,8 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count
-    @genre.inject(0) {|genre, count| genre[counts] +=1; genre}
+    @@genres.inject(0) {|genre, count| genre[counts] +=1; genre}
+    
   end
 
   def self.artist_count
