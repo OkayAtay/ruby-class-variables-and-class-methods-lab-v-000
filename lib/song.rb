@@ -5,7 +5,7 @@ attr_accessor :name, :artist, :genre
 
 @@count = 0
 @@artist_count = {}
-@@genres = {}
+@@genres_count = {}
 @@genres = []
 @@artists = []
 
@@ -34,6 +34,7 @@ attr_accessor :name, :artist, :genre
   def self.genre_count
     binding.pry
     @genre.inject(0) {|genre, count| genre[counts] +=1; genre}
+
   end
 
   def self.artist_count
