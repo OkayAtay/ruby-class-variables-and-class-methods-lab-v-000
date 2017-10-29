@@ -3,7 +3,7 @@ require "pry"
 class Song
 attr_accessor :name, :artist, :genre
 
-@@song_count = 0
+@@count = 0
 @@genre_count = {}
 @@artist_count = {}
 @@genres = []
@@ -13,7 +13,7 @@ attr_accessor :name, :artist, :genre
     @name=name
     @artist=artist
     @genre=genre
-    @@song_count += 1
+    @@count += 1
     if @@genres.include?(genre) == false
       @@genres << genre
     end
@@ -23,7 +23,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.count
-    @@song_count
+    @@count
   end
 
   def self.artists
