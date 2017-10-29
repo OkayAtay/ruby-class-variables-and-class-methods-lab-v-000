@@ -23,7 +23,10 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.artists
-    @@artists
+    @@artists.delete_if {|artist|}
+    if @@genres.include?(genre) == false
+      @@genres << genre
+    end
   end
 
   def self.genres
