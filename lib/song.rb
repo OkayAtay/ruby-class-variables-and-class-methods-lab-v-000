@@ -40,6 +40,7 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.artist_count
+    @@artist_count = @@artists.group_by{|artist| artist}.map{|k, v| [k, v.count]}.to_h
   end
 
 end
