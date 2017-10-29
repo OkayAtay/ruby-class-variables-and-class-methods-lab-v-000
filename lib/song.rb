@@ -14,6 +14,7 @@ attr_accessor :name, :artist, :genre
     @artist=artist
     @@artists << artist
     @genre=genre
+    @@genres << genre
     @@count += 1
     if @@genres.include?(genre) == false
       @@genres << genre
