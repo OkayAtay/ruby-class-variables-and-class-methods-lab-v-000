@@ -5,7 +5,7 @@ attr_accessor :name, :artist, :genre
 
 @@count = 0
 @@artist_count = {}
-@@genres_count = {}
+@@genre_count = {}
 @@genres = []
 @@artists = []
 
@@ -31,9 +31,13 @@ attr_accessor :name, :artist, :genre
     @@genres = @@genres.uniq
   end
 
+#@@genres = [pop, rap, rap]
+#genre_count
+  #need to return {pop =>1, rap => 2}
+  
   def self.genre_count
     binding.pry
-    @@genres.reduce(@@genres_count){|genre, count| genre[counts] +=1; genre}
+    @@genres.reduce(@@genre_count){|genre, count| genre[count] +=1; genre}
   end
 
   def self.artist_count
